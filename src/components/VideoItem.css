@@ -1,0 +1,9 @@
+.video-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.content {
+  display: inline-block;
+}
