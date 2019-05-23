@@ -7,12 +7,12 @@ const VideoItem = props => {
         <img src={props.video.snippet.thumbnails.medium.url} />
       </div>
       <div className="content">
-        <a className="header">Header</a>
+        <a className="header">{props.video.snippet.title}</a>
         <div className="meta">
           <span>Description</span>
         </div>
         <div className="description">
-          <p />
+          <p> {props.video.snippet.description}</p>
         </div>
         <div className="extra">Additional Details</div>
       </div>
