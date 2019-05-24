@@ -3,11 +3,7 @@ import './VideoItem.css';
 
 const VideoItem = ({ video, onVideoSelect }) => {
   return (
-    <div
-      onClick={() => onVideoSelect(video.id.videoId)}
-      key={video.id.videoId}
-      className="item video-item"
-    >
+    <div onClick={() => onVideoSelect(video)} className="item video-item">
       <div className="image">
         <img
           src={video.snippet.thumbnails.default.url}
